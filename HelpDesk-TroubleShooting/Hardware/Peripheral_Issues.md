@@ -19,3 +19,15 @@
 - Black screen but PC is running 
 
 ## Printers
+
+- Not showing up in OS
+- Jobs stuck in queue
+- Network printer unreachable
+- Paper Jam, low ink/toner, dirty roller
+
+## USB devices ( Storage, Webcam, etc. )
+
+- Device not detected/ intermittent connection
+- Drive letter not assigned
+- Power-hungry device disconnected
+- Conflicts with other USB devices 
