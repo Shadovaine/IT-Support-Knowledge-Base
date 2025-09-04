@@ -84,5 +84,43 @@ net stop spooler && net start spooler
 - Try connecting directly via IP:
     In Windows - ADD Printer -> ADD by IP Address
 
+# Authentication and Access Issues
+
+## Symptoms: User prompted for credentials, can not print
+
+## TroubleShooting Step
+
+- Verify printer share permissions in Active Directory or orint server
+- Ensure user account is in the correct security group
+- Remove and re-add the printer with correct credentials
+
+# Frequent paper jams
+
+## Symptoms: Printer stops with jam errors often
+
+## TroubleShooting Steps
+
+- Check rollers for debris/dust
+- Confirm correct paper type
+- Inspect tray alignment
+- Escalate to maintenance if jams are reoccuring in same spot
+
+# Using Printing to wrong printer
+
+## Symptoms: Job shows up at another printer 
+
+- Confirm the correct default printer is set
+- Verifying the mapping in Active Directory Group Policy or script
+- Check the printer's share name - similar names often cause mix- ups
+
+# Drivers and Compatibility Errors
+
+## Sumptoms: Printers not working after OS update
+
+## TroubleShooting Steps
+
+- Download the latest driver from manufacturer's site
+- Remove old driver packages ( Print Management Console in Windows )
+- Reinstall printer with updated driver
 
 
