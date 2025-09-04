@@ -31,3 +31,23 @@
 - Drive letter not assigned
 - Power-hungry device disconnected
 - Conflicts with other USB devices 
+
+## Audio Devices ( Headphones, Speakers, Misc. )
+
+- No Sound/ No mic input 
+- Wrong default playback/recording device
+- Distorted Audio/ buzzing
+- Bluetooth not pairing
+
+# TroubleShooting Steps
+
+## Basic Checks
+
+- Verify device is plugged in firmly
+- Test on a different USB port / cable
+- Try the device on another computer to rule out hardware failure
+- If wireless, check batteries are charged.
+
+## Power and Ports
+
+- 
