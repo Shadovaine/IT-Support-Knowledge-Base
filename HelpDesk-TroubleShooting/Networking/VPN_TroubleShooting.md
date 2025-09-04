@@ -84,7 +84,49 @@ Get-NetRoute -DestinationPrefix "0.0.0.0/0"
 Get-DnsClientServerAddress
 
 # Flush caches
-Clear-
+Clear-DnsClientCache
+
+# If DNS is not updating, force re-register
+ipconfig /registerdns
+```
+
+# Step Eight
+
+## Check Logs and EventViewer
+
+### Window logs
+
+- EventViewer -> Application and Service Logs -> Microsoft -> Windows -> Rasclient
+
+### VPN Client Logs
+
+- Many VPN apps ( AnyConnect, FortiClient, GlobalProtect ) have built-in log windows or export function
+
+# Step Nine
+
+## Avanced Escalation
+
+- Test from a different network ( home vs. office vs. hotspot )
+- Try reinstalling VPN client with admin rights
+- Collect logs and escalate to networking/security team if the issue looks server-side
+
+# Step Ten
+
+## Quick Fix Commands
+
+```powershell
+# Reset IP stack
+netsh int ip reset
+netsh winsock reset
+
+# Release and renew IP
+ipconfig /release
+ipconfig /renew
+
+# Flush DNS
+ipconfig /flushdns
+```
+
 
 
 
